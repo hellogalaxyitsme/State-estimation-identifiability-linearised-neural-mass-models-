@@ -1,0 +1,20 @@
+{
+  "conductivity_sensitivity_subjects": [
+    "sub-06",
+    "sub-05",
+    "sub-25",
+    "sub-33",
+    "sub-29",
+    "sub-19",
+    "sub-08"
+  ],
+  "post_charm_eligible_runs": 288,
+  "post_charm_eligible_subjects": 32,
+  "post_charm_excluded_runs": 35,
+  "pre_charm_run_count": 323,
+  "visual_qc_subject_counts": {
+    "fail": 0,
+    "pass": 32,
+    "pending": 3
+  }
+}

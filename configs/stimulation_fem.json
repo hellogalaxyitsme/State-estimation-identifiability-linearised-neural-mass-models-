@@ -1,0 +1,163 @@
+{
+  "seed": 20260815,
+  "dataset": {
+    "name": "ccepcoreg curated simultaneous epochs (OSF, doi:10.17605/OSF.IO/WSGZP)",
+    "root": "datasets/ccepcoreg",
+    "sampling_frequency_hz": 1000.0
+  },
+  "software": {
+    "head_model_package": "SimNIBS",
+    "head_model_version": "4.6.0",
+    "segmentation_pipeline": "CHARM",
+    "simnibs_root": "software/simnibs-4.6.0"
+  },
+  "cache_root": "derived/fem",
+  "head_model": {
+    "kind": "subject_specific_charm_tetrahedral_fem",
+    "input_images": [
+      "T1w"
+    ],
+    "coordinate_system": "native_T1w_world_mm",
+    "electrodes": "released_185_channel_digitization_projected_to_skin",
+    "source_interpolation_tissues": [
+      1,
+      2
+    ],
+    "source_triangle_offset_mm": 0.05,
+    "brain_conductivity_s_per_m": 0.33,
+    "csf_conductivity_s_per_m": 1.79,
+    "skull_conductivities_s_per_m": [
+      0.0021,
+      0.0042,
+      0.0084
+    ],
+    "nominal_skull_conductivity_s_per_m": 0.0042,
+    "scalp_conductivity_s_per_m": 0.33,
+    "full_cohort_conductivity": 0.0042,
+    "conductivity_sensitivity_subject_count": 7,
+    "conductivity_sensitivity_selection": "lowest_sha256_seed_subject_pairs"
+  },
+  "head_model_qc": {
+    "electrode_projection": {
+      "nearest_neighbour_count": 4,
+      "maximum_median_projection_distance_mm": 25.0,
+      "maximum_p95_projection_distance_mm": 35.0,
+      "maximum_projection_distance_mm": 50.0,
+      "minimum_radially_aligned_projection_fraction": 0.95,
+      "minimum_individual_radial_alignment_absolute_cosine": 0.8,
+      "minimum_median_radial_alignment_absolute_cosine": 0.8,
+      "maximum_p95_angular_displacement_degrees": 10.0,
+      "minimum_mean_neighbour_overlap_fraction": 0.8,
+      "minimum_projected_interelectrode_distance_mm": 2.0,
+      "maximum_fiducial_to_scalp_distance_mm": 15.0,
+      "maximum_centroid_projection_displacement_mm": 25.0,
+      "maximum_median_radial_scale_ratio": 1.3
+    },
+    "mesh_numerical": {
+      "minimum_mean_ratio_p001": 0.02,
+      "minimum_dihedral_angle_p001_degrees": 2.0,
+      "maximum_dihedral_angle_p999_degrees": 178.0,
+      "maximum_edge_aspect_ratio_p999": 20.0,
+      "maximum_fraction_mean_ratio_below_0_01": 0.0001,
+      "maximum_jacobian_condition_number_p999": 200.0
+    },
+    "visual_assets": [
+      "segmentation_overlay",
+      "electrode_projection_overlay",
+      "charm_report"
+    ]
+  },
+  "fem_validation": {
+    "solver": "conjugate_gradient_hypre_boomeramg",
+    "solver_relative_tolerance": 1e-10,
+    "maximum_unpreconditioned_relative_residual": 1e-08,
+    "minimum_positive_converged_reason": 1,
+    "require_every_nonreference_electrode_solve": true,
+    "maximum_reciprocity_relative_frobenius_error": 1e-08,
+    "maximum_reciprocity_max_absolute_error_relative_to_diagonal": 1e-08,
+    "maximum_compact_average_reference_relative_residual": 1e-10,
+    "maximum_source_orientation_unit_norm_error": 1e-08,
+    "require_finite_nonzero_source_columns": true,
+    "require_positive_finite_source_depths": true,
+    "require_unit_source_orientations": true
+  },
+  "eligibility": {
+    "minimum_eeg_trials": 10,
+    "minimum_ieeg_trials": 10,
+    "minimum_good_eeg_channels": 128,
+    "minimum_good_ieeg_sources_after_stimulated_shaft_exclusion": 10,
+    "minimum_unique_stimulation_sites_per_subject": 2,
+    "minimum_samples": 401,
+    "required_t1_shape": [
+      256,
+      256,
+      256
+    ],
+    "required_t1_voxel_size_mm": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "maximum_eeg_to_scalp_median_distance_mm": 10.0,
+    "maximum_eeg_to_scalp_p95_distance_mm": 15.0,
+    "maximum_source_to_brain_distance_mm": 5.0,
+    "require_all_finite_signal_samples": true
+  },
+  "windows_seconds": {
+    "baseline": [
+      -0.25,
+      -0.05
+    ],
+    "static_early": [
+      0.005,
+      0.02
+    ],
+    "dynamic_propagated": [
+      0.02,
+      0.1
+    ]
+  },
+  "dynamic_proxy": {
+    "kind": "baseline_standardized_trial_mean_ieeg_bipolar_trajectory",
+    "exclude_all_channels_on_stimulated_shaft": true,
+    "baseline_scale_floor_relative_to_subject_median": 0.001,
+    "forward_orientation": "adjacent_bipolar_midpoint_shaft_direction",
+    "trajectory_score": "mean_spatial_squared_cosine",
+    "source_geometry_permutations": 1000,
+    "interpretation": "partial_intracranial_source_proxy_not_dipole_moment"
+  },
+  "detectability": {
+    "outcome": "log1p_trial_count_scaled_whitened_scalp_energy",
+    "noise_covariance_window": "baseline",
+    "covariance_diagonal_loading": 0.1,
+    "population_weighting": "equal_subject",
+    "held_out_scheme": "leave_one_subject_out",
+    "regression": "standardized_ridge",
+    "ridge_alpha": 1.0,
+    "baseline_features": [
+      "log_intensity_ma",
+      "log_pulse_width_ms",
+      "source_depth_mm"
+    ],
+    "static_features": [
+      "log_static_fem_sensitivity"
+    ],
+    "dynamic_features": [
+      "log_dynamic_fem_information_energy"
+    ],
+    "primary_loss": "subject_mean_squared_error",
+    "primary_contrast": "static_loss_minus_dynamic_loss"
+  },
+  "inference": {
+    "permutations": 50000,
+    "bootstrap_resamples": 50000,
+    "alpha": 0.05,
+    "familywise_method": "holm",
+    "tests": [
+      "nominal_fem_known_site_minus_wrong_site_early",
+      "dynamic_fem_trajectory_minus_static_fem_propagated",
+      "held_out_static_loss_minus_dynamic_loss"
+    ]
+  },
+  "output_dir": "results/stimulation/fem"
+}

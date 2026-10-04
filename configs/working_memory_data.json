@@ -1,0 +1,47 @@
+{
+  "dataset": {
+    "name": "OpenNeuro ds004752 simultaneous scalp EEG-iEEG verbal working memory",
+    "persistent_id": "10.18112/openneuro.ds004752.v1.0.1",
+    "repository_url": "https://github.com/OpenNeuroDatasets/ds004752.git",
+    "repository_commit": "234fd4c04dea66ab9b0fd5ddbf4ec51f56b6ad02",
+    "signal_base_url": "https://s3.amazonaws.com/openneuro.org/ds004752",
+    "root": "datasets/ds004752",
+    "published_subject_count": 15,
+    "paired_session_count": 68,
+    "signal_file_count": 136,
+    "signal_total_size_bytes": 10983029888
+  },
+  "eligibility": {
+    "minimum_clean_trials_per_session": 30,
+    "minimum_scalp_channels": 8,
+    "minimum_ieeg_contacts": 20,
+    "minimum_valid_bipolar_sources": 10,
+    "valid_source_rule": "both_adjacent_contacts_have_nonempty_non_no_label_found_anatomical_labels",
+    "released_artifact_flag_keep_value": 0
+  },
+  "preprocessing": {
+    "target_sampling_frequency_hz": 200.0
+  },
+  "head_model": {
+    "subjects_dir": "data/subjects",
+    "subject": "fsaverage",
+    "bem_solution": "data/subjects/fsaverage/bem/fsaverage-5120-5120-5120-bem-sol.fif",
+    "scalp_montage": "MNE_standard_1020_with_legacy_name_aliases",
+    "source_coordinates": "released_MNI_mm_transformed_to_fsaverage_head",
+    "source_position": "adjacent_contact_midpoint",
+    "source_orientation": "lower_to_higher_contact_direction",
+    "lead_reference": "common_average",
+    "minimum_finite_nonzero_forward_columns": 10
+  },
+  "edf_header_repair": {
+    "affected_relative_paths": [
+      "sub-06/ses-04/ieeg/sub-06_ses-04_task-verbalWM_run-01_ieeg.edf",
+      "sub-14/ses-06/eeg/sub-14_ses-06_task-verbalWM_run-01_eeg.edf"
+    ],
+    "edf_header_second_byte_offset": 182,
+    "invalid_second_value": "60",
+    "replacement_second_value": "59",
+    "repair_cache_root": "derived/working_memory/edf_header_repair"
+  },
+  "output_dir": "results/working_memory/data"
+}

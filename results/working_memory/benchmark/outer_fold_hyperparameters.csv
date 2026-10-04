@@ -1,0 +1,16 @@
+held_out_subject,training_subject_count,training_subjects,test_subject_excluded_from_selection,selected_lag_index,selected_lag_taps_samples,selected_maximum_lag_samples,selected_maximum_lag_milliseconds,selected_alpha_index,selected_alpha,training_equal_subject_mean_score,held_out_session_count
+sub-01,14,sub-02;sub-03;sub-04;sub-05;sub-06;sub-07;sub-08;sub-09;sub-10;sub-11;sub-12;sub-13;sub-14;sub-15,True,0,0,0,0.0,4,1.0,0.010540473924070993,4
+sub-02,14,sub-01;sub-03;sub-04;sub-05;sub-06;sub-07;sub-08;sub-09;sub-10;sub-11;sub-12;sub-13;sub-14;sub-15,True,0,0,0,0.0,4,1.0,0.01066936083655333,7
+sub-03,14,sub-01;sub-02;sub-04;sub-05;sub-06;sub-07;sub-08;sub-09;sub-10;sub-11;sub-12;sub-13;sub-14;sub-15,True,0,0,0,0.0,4,1.0,0.01060404159319418,3
+sub-04,14,sub-01;sub-02;sub-03;sub-05;sub-06;sub-07;sub-08;sub-09;sub-10;sub-11;sub-12;sub-13;sub-14;sub-15,True,0,0,0,0.0,4,1.0,0.010807703854086793,2
+sub-05,14,sub-01;sub-02;sub-03;sub-04;sub-06;sub-07;sub-08;sub-09;sub-10;sub-11;sub-12;sub-13;sub-14;sub-15,True,0,0,0,0.0,4,1.0,0.01120498294457931,3
+sub-06,14,sub-01;sub-02;sub-03;sub-04;sub-05;sub-07;sub-08;sub-09;sub-10;sub-11;sub-12;sub-13;sub-14;sub-15,True,0,0,0,0.0,4,1.0,0.009695850710661902,7
+sub-07,14,sub-01;sub-02;sub-03;sub-04;sub-05;sub-06;sub-08;sub-09;sub-10;sub-11;sub-12;sub-13;sub-14;sub-15,True,0,0,0,0.0,4,1.0,0.0101473442162224,4
+sub-08,14,sub-01;sub-02;sub-03;sub-04;sub-05;sub-06;sub-07;sub-09;sub-10;sub-11;sub-12;sub-13;sub-14;sub-15,True,1,0;1;2,2,10.0,4,1.0,0.011374495864233058,4
+sub-09,14,sub-01;sub-02;sub-03;sub-04;sub-05;sub-06;sub-07;sub-08;sub-10;sub-11;sub-12;sub-13;sub-14;sub-15,True,0,0,0,0.0,4,1.0,0.009614870286497301,2
+sub-10,14,sub-01;sub-02;sub-03;sub-04;sub-05;sub-06;sub-07;sub-08;sub-09;sub-11;sub-12;sub-13;sub-14;sub-15,True,0,0,0,0.0,4,1.0,0.011360674953471997,2
+sub-11,14,sub-01;sub-02;sub-03;sub-04;sub-05;sub-06;sub-07;sub-08;sub-09;sub-10;sub-12;sub-13;sub-14;sub-15,True,0,0,0,0.0,4,1.0,0.01060816223753879,6
+sub-12,14,sub-01;sub-02;sub-03;sub-04;sub-05;sub-06;sub-07;sub-08;sub-09;sub-10;sub-11;sub-13;sub-14;sub-15,True,0,0,0,0.0,4,1.0,0.010821750501867343,6
+sub-13,14,sub-01;sub-02;sub-03;sub-04;sub-05;sub-06;sub-07;sub-08;sub-09;sub-10;sub-11;sub-12;sub-14;sub-15,True,0,0,0,0.0,4,1.0,0.010967016460800583,6
+sub-14,14,sub-01;sub-02;sub-03;sub-04;sub-05;sub-06;sub-07;sub-08;sub-09;sub-10;sub-11;sub-12;sub-13;sub-15,True,0,0,0,0.0,4,1.0,0.009691462211291727,8
+sub-15,14,sub-01;sub-02;sub-03;sub-04;sub-05;sub-06;sub-07;sub-08;sub-09;sub-10;sub-11;sub-12;sub-13;sub-14,True,3,0;1;2;4;8,8,40.0,4,1.0,0.01163920479239448,4

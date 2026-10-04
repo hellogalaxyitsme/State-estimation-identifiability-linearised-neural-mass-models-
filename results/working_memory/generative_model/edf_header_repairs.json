@@ -1,0 +1,24 @@
+{
+  "repairs": [
+    {
+      "changed_byte_offsets": [
+        182,
+        183
+      ],
+      "file_size_bytes": 102416640,
+      "original_ascii": "60",
+      "relative_path": "sub-06/ses-04/ieeg/sub-06_ses-04_task-verbalWM_run-01_ieeg.edf",
+      "replacement_ascii": "59"
+    },
+    {
+      "changed_byte_offsets": [
+        182,
+        183
+      ],
+      "file_size_bytes": 67205632,
+      "original_ascii": "60",
+      "relative_path": "sub-14/ses-06/eeg/sub-14_ses-06_task-verbalWM_run-01_eeg.edf",
+      "replacement_ascii": "59"
+    }
+  ]
+}

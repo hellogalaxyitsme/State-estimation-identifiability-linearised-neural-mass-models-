@@ -1,0 +1,131 @@
+{
+  "bootstrap_resample_count": 50000,
+  "clean_trial_count": 3185,
+  "generative_minus_ridge": {
+    "extreme_sign_patterns": 32750,
+    "median_subject_value": -0.009388211621850308,
+    "observed_mean": -0.008567624041967268,
+    "one_sided_exact_p": 0.99945068359375,
+    "positive_subject_fraction": 0.06666666666666667,
+    "subject_bootstrap_mean_95_ci_descriptive": [
+      -0.012409647416286942,
+      -0.004595615910945119
+    ],
+    "subject_count": 15,
+    "total_sign_patterns": 32768
+  },
+  "maximum_difference_from_generative_analysis": 7.806255641895632e-18,
+  "model_ranking": [
+    {
+      "equal_subject_mean_score": 0.009198142263785621,
+      "model": "lagged_linear_ridge"
+    },
+    {
+      "equal_subject_mean_score": 0.0006305182218183537,
+      "model": "generative_state_space"
+    },
+    {
+      "equal_subject_mean_score": 0.000165963079984732,
+      "model": "static_lead_field"
+    },
+    {
+      "equal_subject_mean_score": 0.0,
+      "model": "nuisance_only"
+    }
+  ],
+  "model_summaries": {
+    "generative_state_space": {
+      "extreme_sign_patterns": 9496,
+      "median_subject_value": -0.0009088969500200285,
+      "observed_mean": 0.0006305182218183537,
+      "one_sided_exact_p": 0.289794921875,
+      "positive_subject_fraction": 0.4666666666666667,
+      "subject_bootstrap_mean_95_ci_descriptive": [
+        -0.0009911768229657462,
+        0.0026604918350027337
+      ],
+      "subject_count": 15,
+      "total_sign_patterns": 32768
+    },
+    "lagged_linear_ridge": {
+      "extreme_sign_patterns": 66,
+      "median_subject_value": 0.009543067053639814,
+      "observed_mean": 0.009198142263785621,
+      "one_sided_exact_p": 0.00201416015625,
+      "positive_subject_fraction": 0.8,
+      "subject_bootstrap_mean_95_ci_descriptive": [
+        0.004239730979723432,
+        0.014021924171077138
+      ],
+      "subject_count": 15,
+      "total_sign_patterns": 32768
+    },
+    "nuisance_only": {
+      "extreme_sign_patterns": 32768,
+      "median_subject_value": 0.0,
+      "observed_mean": 0.0,
+      "one_sided_exact_p": 1.0,
+      "positive_subject_fraction": 0.0,
+      "subject_bootstrap_mean_95_ci_descriptive": [
+        0.0,
+        0.0
+      ],
+      "subject_count": 15,
+      "total_sign_patterns": 32768
+    },
+    "static_lead_field": {
+      "extreme_sign_patterns": 14782,
+      "median_subject_value": -0.0008708568786445932,
+      "observed_mean": 0.000165963079984732,
+      "one_sided_exact_p": 0.45111083984375,
+      "positive_subject_fraction": 0.4,
+      "subject_bootstrap_mean_95_ci_descriptive": [
+        -0.0017121960780375988,
+        0.002516405432470425
+      ],
+      "subject_count": 15,
+      "total_sign_patterns": 32768
+    }
+  },
+  "models": [
+    "nuisance_only",
+    "static_lead_field",
+    "lagged_linear_ridge",
+    "generative_state_space"
+  ],
+  "ridge_outer_fold_selection_counts": {
+    "lags=0;1;2;4;8;alpha=1": 1,
+    "lags=0;1;2;alpha=1": 1,
+    "lags=0;alpha=1": 13
+  },
+  "secondary_contrasts": {
+    "generative_state_space_minus_static_lead_field": {
+      "extreme_sign_patterns": 3277,
+      "median_subject_value": 3.999529605759882e-05,
+      "observed_mean": 0.0004645551418336215,
+      "one_sided_exact_p": 0.100006103515625,
+      "positive_subject_fraction": 0.6,
+      "subject_bootstrap_mean_95_ci_descriptive": [
+        -9.781142139696115e-05,
+        0.0011303201481125907
+      ],
+      "subject_count": 15,
+      "total_sign_patterns": 32768
+    },
+    "lagged_linear_ridge_minus_static_lead_field": {
+      "extreme_sign_patterns": 11,
+      "median_subject_value": 0.009105736865750693,
+      "observed_mean": 0.009032179183800889,
+      "one_sided_exact_p": 0.000335693359375,
+      "positive_subject_fraction": 0.9333333333333333,
+      "subject_bootstrap_mean_95_ci_descriptive": [
+        0.0051055529579713925,
+        0.013092337166844216
+      ],
+      "subject_count": 15,
+      "total_sign_patterns": 32768
+    }
+  },
+  "session_count": 68,
+  "subject_count": 15
+}

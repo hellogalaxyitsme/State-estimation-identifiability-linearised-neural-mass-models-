@@ -1,0 +1,70 @@
+{
+  "seed": 20260826,
+  "fem_config": "configs/stimulation_fem.json",
+  "cohort": {
+    "eligibility_ledger": "results/stimulation/fem/post_charm_eligibility.csv",
+    "eligibility_field": "post_charm_eligible",
+    "population_weighting": "equal_subject"
+  },
+  "fem_candidate_scores": "results/stimulation/fem/candidate_scores.csv",
+  "source_characterization": {
+    "candidate_pool": "all_fem_sources_within_the_brain_distance_criterion",
+    "features": [
+      "source_depth_mm",
+      "log_full_average_referenced_lead_field_column_l2_norm",
+      "absolute_dipole_radiality"
+    ],
+    "lead_field_norm_channels": "all_185_channels_in_the_validated_compact_operator",
+    "radiality_definition": "absolute_cosine_between_the_bipolar_dipole_orientation_and_source_minus_estimated_scalp_center",
+    "standardization": "within_subject_population_z_score_ddof_0_over_the_complete_candidate_pool"
+  },
+  "feature_matched_control": {
+    "match_count": 10,
+    "distance": "euclidean_distance_in_three_dimensional_within_subject_z_scored_feature_space",
+    "wrong_source_definition": "any_eligible_source_except_the_exact_candidate_true_label",
+    "control_score": "arithmetic_mean_of_the_10_selected_wrong_source_scores",
+    "tie_break": "feature_distance_then_lexicographic_source_label"
+  },
+  "spatial_neighbour_control": {
+    "candidate_pool": "other_stimulation_sites_within_subject",
+    "distance": "euclidean_native_t1w_source_position_mm",
+    "match_count": 1,
+    "tie_break": "spatial_distance_then_lexicographic_source_label"
+  },
+  "endpoint": {
+    "window_seconds_half_open": [
+      0.005,
+      0.02
+    ],
+    "trial_aggregation": "arithmetic_mean",
+    "channel_policy": "run_specific_good_channels_without_imputation",
+    "reference": "average_over_run_specific_good_channels",
+    "time_aggregation": "mean_spatial_squared_cosine",
+    "run_effects": [
+      "true_minus_mean_10_feature_matched_wrong_sources",
+      "true_minus_nearest_wrong_stimulation_site"
+    ]
+  },
+  "inference": {
+    "test_count": 2,
+    "tests": [
+      "true_minus_feature_matched_wrong_source_topography",
+      "true_minus_nearest_spatial_wrong_stimulation_site_topography"
+    ],
+    "subject_effect": "mean_run_effect_within_subject",
+    "population_effect": "arithmetic_mean_of_subject_effects",
+    "bootstrap_resamples": 50000,
+    "bootstrap_unit": "subject",
+    "confidence_interval_quantiles": [
+      0.025,
+      0.975
+    ],
+    "permutations": 50000,
+    "permutation_unit": "shuffle_stimulation_labels_across_runs_within_each_subject",
+    "permutation_alternative": "greater",
+    "p_value_correction": "plus_one",
+    "familywise_method": "holm"
+  },
+  "consistency_tolerance": 1e-12,
+  "output_dir": "results/stimulation/matched_sources"
+}

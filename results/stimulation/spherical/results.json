@@ -1,0 +1,88 @@
+{
+  "cohort": {
+    "analysed_runs": 316,
+    "analysed_subjects": 35,
+    "discovered_runs": 323,
+    "discovered_subjects": 36,
+    "eligible_runs": 316,
+    "eligible_subjects": 35,
+    "excluded_runs": 7,
+    "subject_limit": null
+  },
+  "conductivity_robustness": {
+    "comparison_count": 584,
+    "median_spatial_squared_cosine_to_nominal": 0.9941257774335053,
+    "minimum_spatial_squared_cosine_to_nominal": 0.9706005985208453
+  },
+  "primary": {
+    "sigma_0.0042__primary_early": {
+      "median_subject_effect": 0.07856414932394128,
+      "null_mean": 0.0014073195035563396,
+      "null_sd": 0.00896000756065259,
+      "observed_mean_subject_effect": 0.06986332485267531,
+      "one_sided_p_value": 4.999750012499375e-05,
+      "permutation_count": 20000.0,
+      "positive_subject_fraction": 0.8,
+      "subject_count": 35.0
+    }
+  },
+  "sensitivity": {
+    "sigma_0.0021__primary_early": {
+      "median_subject_effect": 0.06678228293169397,
+      "null_mean": 0.001324252211553265,
+      "null_sd": 0.008129924789956007,
+      "observed_mean_subject_effect": 0.0583659310494397,
+      "one_sided_p_value": 4.999750012499375e-05,
+      "permutation_count": 20000.0,
+      "positive_subject_fraction": 0.8,
+      "subject_count": 35.0
+    },
+    "sigma_0.0021__secondary_propagated": {
+      "median_subject_effect": 0.0388343291174162,
+      "null_mean": 0.0005004314261091936,
+      "null_sd": 0.004812953456388451,
+      "observed_mean_subject_effect": 0.03992098926198644,
+      "one_sided_p_value": 4.999750012499375e-05,
+      "permutation_count": 20000.0,
+      "positive_subject_fraction": 0.8,
+      "subject_count": 35.0
+    },
+    "sigma_0.0042__secondary_propagated": {
+      "median_subject_effect": 0.044305937212241936,
+      "null_mean": 0.0005547132818418005,
+      "null_sd": 0.005040488473608237,
+      "observed_mean_subject_effect": 0.04544593639943747,
+      "one_sided_p_value": 4.999750012499375e-05,
+      "permutation_count": 20000.0,
+      "positive_subject_fraction": 0.8285714285714286,
+      "subject_count": 35.0
+    },
+    "sigma_0.0084__primary_early": {
+      "median_subject_effect": 0.08381141052641425,
+      "null_mean": 0.001460553483564473,
+      "null_sd": 0.009683123950634412,
+      "observed_mean_subject_effect": 0.08010697154974195,
+      "one_sided_p_value": 4.999750012499375e-05,
+      "permutation_count": 20000.0,
+      "positive_subject_fraction": 0.8,
+      "subject_count": 35.0
+    },
+    "sigma_0.0084__secondary_propagated": {
+      "median_subject_effect": 0.047427860742907786,
+      "null_mean": 0.0005874412216967713,
+      "null_sd": 0.005199967897984933,
+      "observed_mean_subject_effect": 0.04980189500187535,
+      "one_sided_p_value": 4.999750012499375e-05,
+      "permutation_count": 20000.0,
+      "positive_subject_fraction": 0.8571428571428571,
+      "subject_count": 35.0
+    }
+  },
+  "software": {
+    "mne": "1.10.2",
+    "numpy": "2.2.6",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "scipy": "1.15.3"
+  }
+}

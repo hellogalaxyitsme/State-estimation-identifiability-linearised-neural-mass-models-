@@ -1,0 +1,16 @@
+{
+  "conductivity_sensitivity_subjects": [
+    "sub-06",
+    "sub-05",
+    "sub-25",
+    "sub-33",
+    "sub-29",
+    "sub-19",
+    "sub-08"
+  ],
+  "discovered_paired_candidate_runs": 323,
+  "discovered_subjects": 36,
+  "excluded_runs": 5,
+  "pre_charm_eligible_runs": 318,
+  "pre_charm_eligible_subjects": 35
+}

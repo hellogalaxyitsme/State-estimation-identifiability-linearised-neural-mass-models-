@@ -1,0 +1,67 @@
+{
+  "seed": 20260815,
+  "dataset": {
+    "name": "ccepcoreg curated epochs (OSF, doi:10.17605/OSF.IO/WSGZP)",
+    "root": "datasets/ccepcoreg",
+    "sampling_frequency_hz": 1000.0
+  },
+  "head_model": {
+    "coordinate_system": "native_T1w_relabeled_as_head_for_forward_computation",
+    "relative_radii": [
+      0.9,
+      0.92,
+      0.97,
+      1.0
+    ],
+    "brain_conductivity_s_per_m": 0.33,
+    "csf_conductivity_s_per_m": 1.0,
+    "skull_conductivities_s_per_m": [
+      0.0021,
+      0.0042,
+      0.0084
+    ],
+    "nominal_skull_conductivity_s_per_m": 0.0042,
+    "scalp_conductivity_s_per_m": 0.33,
+    "dipole_orientation": "adjacent_bipolar_midpoint_shaft_direction",
+    "orientation_sign_invariant": true
+  },
+  "eligibility": {
+    "minimum_trials": 10,
+    "minimum_good_channels": 128,
+    "minimum_samples": 401,
+    "minimum_unique_sources_per_subject": 2,
+    "sphere_radius_m": [
+      0.07,
+      0.12
+    ],
+    "maximum_sphere_rmse_m": 0.015,
+    "maximum_source_radius_fraction": 0.9
+  },
+  "windows_seconds": {
+    "primary_early": [
+      0.005,
+      0.02
+    ],
+    "secondary_propagated": [
+      0.02,
+      0.1
+    ]
+  },
+  "scoring": {
+    "trial_aggregation": "arithmetic_mean",
+    "channel_policy": "run_specific_good_channels_without_imputation",
+    "reference": "average_over_run_specific_good_channels",
+    "time_aggregation": "mean_spatial_squared_cosine",
+    "wrong_source_control": "all_other_unique_sources_within_subject",
+    "subject_effect": "mean_over_runs_of_matched_minus_mean_other_source_score",
+    "population_weighting": "equal_weight_per_subject"
+  },
+  "inference": {
+    "permutations": 20000,
+    "alternative": "greater",
+    "p_value_correction": "plus_one",
+    "permutation_unit": "source_labels_within_subject",
+    "primary": "nominal skull conductivity, primary_early window"
+  },
+  "output_dir": "results/stimulation/spherical"
+}

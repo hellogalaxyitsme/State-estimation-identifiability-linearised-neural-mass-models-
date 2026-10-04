@@ -1,0 +1,118 @@
+{
+  "seed": 20260827,
+  "generative_config": "configs/working_memory_generative.json",
+  "generative_session_metrics": "results/working_memory/generative_model/session_metrics.csv",
+  "partitions": {
+    "session_fit_interval_seconds_half_open": [
+      0.25,
+      1.75
+    ],
+    "session_test_interval_seconds_closed_right": [
+      2.25,
+      4.75
+    ],
+    "outer_hyperparameter_split": "leave_one_subject_out",
+    "training_selection_weighting": "mean_sessions_within_training_subject_then_equal_training_subject_mean",
+    "test_subject_encoding_may_fit_personalized_coefficients": true,
+    "test_subject_information_may_enter_hyperparameter_selection": false
+  },
+  "models": {
+    "model_count": 4,
+    "names": [
+      "nuisance_only",
+      "static_lead_field",
+      "lagged_linear_ridge",
+      "generative_state_space"
+    ],
+    "nuisance_only": {
+      "predicted_mean": "zero_deviation_from_encoding_scalp_mean",
+      "score": 0.0
+    },
+    "static_lead_field": {
+      "source_proxy": "encoding_standardized_contemporaneous_bipolar_ieeg",
+      "prediction": "template_bem_lead_field_times_encoding_fit_diagonal_source_gains_times_source_proxy",
+      "source_gain_ridge": 0.1,
+      "temporal_lags": [
+        0
+      ],
+      "no_transition_or_kalman_model": true
+    },
+    "lagged_linear_ridge": {
+      "predictors": "encoding_standardized_bipolar_ieeg_at_fixed_causal_multiscale_lag_taps",
+      "targets": "orthonormal_average_referenced_scalp_eeg_deviation_from_encoding_mean",
+      "coefficient_fit": "session_encoding_only_multivariate_ridge_with_intercept",
+      "lag_tap_sets_samples_at_200_hz": [
+        [
+          0
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          4,
+          8
+        ],
+        [
+          0,
+          1,
+          2,
+          4,
+          8,
+          16
+        ],
+        [
+          0,
+          1,
+          2,
+          4,
+          8,
+          16,
+          32
+        ]
+      ],
+      "ridge_alpha_multipliers": [
+        0.0001,
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ],
+      "ridge_absolute_scale": "alpha_times_mean_feature_variance",
+      "hyperparameter_selection": "outer_loso_training_subject_equal_mean_held_out_maintenance_log_likelihood",
+      "tie_break": "higher_training_score_then_fewer_lag_taps_then_larger_alpha"
+    },
+    "generative_state_space": {
+      "configuration": "configs/working_memory_generative.json"
+    }
+  },
+  "evaluation": {
+    "metric": "gaussian_log_likelihood_gain_per_scalp_dimension_and_sample_over_nuisance_only",
+    "common_session_scalp_mean": "generative_model_encoding_scalp_mean",
+    "common_session_covariance": "generative_model_encoding_residual_covariance",
+    "population_weighting": "equal_subject"
+  },
+  "inference": {
+    "primary_contrast": "generative_state_space_minus_lagged_linear_ridge",
+    "primary_test": "exact_paired_subject_sign_flip_mean",
+    "subject_bootstrap_resamples": 50000,
+    "confidence_interval_quantiles": [
+      0.025,
+      0.975
+    ]
+  },
+  "consistency_tolerance": 1e-12,
+  "output_dir": "results/working_memory/benchmark"
+}

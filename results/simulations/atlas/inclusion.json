@@ -1,0 +1,30 @@
+{
+ "jansen_rit": {
+  "attempts": 328,
+  "root_finding_failed": 0,
+  "no_fixed_point": 0,
+  "no_stable_fixed_point": 128,
+  "accepted": 200
+ },
+ "wendling": {
+  "attempts": 313,
+  "root_finding_failed": 0,
+  "no_fixed_point": 0,
+  "no_stable_fixed_point": 113,
+  "accepted": 200
+ },
+ "wendling_2002": {
+  "attempts": 228,
+  "root_finding_failed": 0,
+  "no_fixed_point": 0,
+  "no_stable_fixed_point": 28,
+  "accepted": 200
+ },
+ "next_generation": {
+  "attempts": 349,
+  "root_finding_failed": 0,
+  "no_fixed_point": 0,
+  "no_stable_fixed_point": 149,
+  "accepted": 200
+ }
+}

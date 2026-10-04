@@ -1,0 +1,632 @@
+{
+ "summary": {
+  "mu_shaft": {
+   "calibration_slope": 0.776378679097877,
+   "r2": 0.6357345591257073,
+   "spearman_geometry_beyond_current": 0.4835007932310946
+  },
+  "mu_orientation_average": {
+   "calibration_slope": 0.7896680273103935,
+   "r2": 0.6251920923889691,
+   "spearman_geometry_beyond_current": 0.40888418826017975
+  },
+  "mu_best_orientation": {
+   "calibration_slope": 0.7625253867729476,
+   "r2": 0.6045923043380756,
+   "spearman_geometry_beyond_current": 0.4203595980962453
+  },
+  "median_cos2_fitted_vs_shaft_orientation": 0.9000838022985596
+ },
+ "sessions": [
+  {
+   "subject": "sub-01",
+   "run": "01",
+   "current_a": 0.001,
+   "mu_obs": 12246742.130664289,
+   "mu_shaft": 54885922.85686049,
+   "mu_orientation_average": 54587661.45205256,
+   "mu_best_orientation": 71853406.55681208,
+   "observed_vs_shaft_cosine2": 0.9767679800679553
+  },
+  {
+   "subject": "sub-01",
+   "run": "02",
+   "current_a": 0.005,
+   "mu_obs": 354822215.8631791,
+   "mu_shaft": 1425524203.2048135,
+   "mu_orientation_average": 1391257864.832646,
+   "mu_best_orientation": 1852633140.8856664,
+   "observed_vs_shaft_cosine2": 0.9705730769203398
+  },
+  {
+   "subject": "sub-01",
+   "run": "03",
+   "current_a": 0.001,
+   "mu_obs": 1397883.1168779628,
+   "mu_shaft": 22176400.17865615,
+   "mu_orientation_average": 31980301.301512677,
+   "mu_best_orientation": 49134523.95477161,
+   "observed_vs_shaft_cosine2": 0.9054843773647732
+  },
+  {
+   "subject": "sub-01",
+   "run": "04",
+   "current_a": 0.005,
+   "mu_obs": 36621555.152630724,
+   "mu_shaft": 410789045.1789895,
+   "mu_orientation_average": 667802313.8873943,
+   "mu_best_orientation": 1115877149.6619616,
+   "observed_vs_shaft_cosine2": 0.89869352568012
+  },
+  {
+   "subject": "sub-01",
+   "run": "05",
+   "current_a": 0.001,
+   "mu_obs": 37516636.991593316,
+   "mu_shaft": 66932262.69048094,
+   "mu_orientation_average": 96190060.6357637,
+   "mu_best_orientation": 135618679.50662872,
+   "observed_vs_shaft_cosine2": 0.8144442003816837
+  },
+  {
+   "subject": "sub-01",
+   "run": "06",
+   "current_a": 0.001,
+   "mu_obs": 670543.3390052662,
+   "mu_shaft": 13021860.122086905,
+   "mu_orientation_average": 14288332.158557331,
+   "mu_best_orientation": 19329457.081721213,
+   "observed_vs_shaft_cosine2": 0.9810931132633637
+  },
+  {
+   "subject": "sub-01",
+   "run": "07",
+   "current_a": 0.005,
+   "mu_obs": 22280204.183736295,
+   "mu_shaft": 369152606.2965548,
+   "mu_orientation_average": 406689606.77637917,
+   "mu_best_orientation": 579922389.5654896,
+   "observed_vs_shaft_cosine2": 0.9782351581865131
+  },
+  {
+   "subject": "sub-01",
+   "run": "08",
+   "current_a": 0.001,
+   "mu_obs": 1400168.2098111617,
+   "mu_shaft": 25873729.459429763,
+   "mu_orientation_average": 25439498.374524068,
+   "mu_best_orientation": 32980914.449802656,
+   "observed_vs_shaft_cosine2": 0.9274233479317587
+  },
+  {
+   "subject": "sub-01",
+   "run": "09",
+   "current_a": 0.005,
+   "mu_obs": 40203679.40172051,
+   "mu_shaft": 602156992.075477,
+   "mu_orientation_average": 581184078.743073,
+   "mu_best_orientation": 777137176.8457444,
+   "observed_vs_shaft_cosine2": 0.9215660435453199
+  },
+  {
+   "subject": "sub-01",
+   "run": "10",
+   "current_a": 0.001,
+   "mu_obs": 4707800.77919888,
+   "mu_shaft": 62992589.46671825,
+   "mu_orientation_average": 54130211.11958641,
+   "mu_best_orientation": 73566233.14467125,
+   "observed_vs_shaft_cosine2": 0.9571470092620015
+  },
+  {
+   "subject": "sub-01",
+   "run": "11",
+   "current_a": 0.005,
+   "mu_obs": 90569666.90421803,
+   "mu_shaft": 1131055251.652542,
+   "mu_orientation_average": 991162153.81957,
+   "mu_best_orientation": 1415797727.7988439,
+   "observed_vs_shaft_cosine2": 0.9560441910963544
+  },
+  {
+   "subject": "sub-02",
+   "run": "01",
+   "current_a": 0.001,
+   "mu_obs": 160627.45946543445,
+   "mu_shaft": 6433105.709939057,
+   "mu_orientation_average": 5154265.160085295,
+   "mu_best_orientation": 7036033.600173648,
+   "observed_vs_shaft_cosine2": 0.9691127159968731
+  },
+  {
+   "subject": "sub-02",
+   "run": "02",
+   "current_a": 0.0005,
+   "mu_obs": 58233.6337462301,
+   "mu_shaft": 1532331.0494535172,
+   "mu_orientation_average": 1212278.140329997,
+   "mu_best_orientation": 1759494.9335777685,
+   "observed_vs_shaft_cosine2": 0.9604988081207585
+  },
+  {
+   "subject": "sub-02",
+   "run": "03",
+   "current_a": 0.001,
+   "mu_obs": 639818.7331835802,
+   "mu_shaft": 9643313.407788713,
+   "mu_orientation_average": 7272429.850533791,
+   "mu_best_orientation": 11547931.258104011,
+   "observed_vs_shaft_cosine2": 0.9378500429365324
+  },
+  {
+   "subject": "sub-02",
+   "run": "04",
+   "current_a": 0.0005,
+   "mu_obs": 215248.4318579709,
+   "mu_shaft": 2267617.195623612,
+   "mu_orientation_average": 1821032.9008745404,
+   "mu_best_orientation": 2918263.4886963116,
+   "observed_vs_shaft_cosine2": 0.9358035162427204
+  },
+  {
+   "subject": "sub-02",
+   "run": "05",
+   "current_a": 0.001,
+   "mu_obs": 2534717.389963031,
+   "mu_shaft": 35983300.2321483,
+   "mu_orientation_average": 23192803.815798122,
+   "mu_best_orientation": 45738676.132581174,
+   "observed_vs_shaft_cosine2": 0.856351077981415
+  },
+  {
+   "subject": "sub-02",
+   "run": "06",
+   "current_a": 0.0005,
+   "mu_obs": 1027541.3685608408,
+   "mu_shaft": 7470683.907124701,
+   "mu_orientation_average": 5067016.108457399,
+   "mu_best_orientation": 9824734.652648658,
+   "observed_vs_shaft_cosine2": 0.8633267903912568
+  },
+  {
+   "subject": "sub-03",
+   "run": "01",
+   "current_a": 0.0005,
+   "mu_obs": 18345.151367934202,
+   "mu_shaft": 417083248.8437711,
+   "mu_orientation_average": 161558666.97129187,
+   "mu_best_orientation": 478428353.5071028,
+   "observed_vs_shaft_cosine2": 0.09881058553090145
+  },
+  {
+   "subject": "sub-03",
+   "run": "02",
+   "current_a": 0.0005,
+   "mu_obs": 207947.96836744805,
+   "mu_shaft": 3332729.203184491,
+   "mu_orientation_average": 4397707.151855424,
+   "mu_best_orientation": 11075952.72899933,
+   "observed_vs_shaft_cosine2": 0.6768471760238027
+  },
+  {
+   "subject": "sub-03",
+   "run": "03",
+   "current_a": 0.0005,
+   "mu_obs": 2445844.284798191,
+   "mu_shaft": 1681420.8751992388,
+   "mu_orientation_average": 1140935.5731476597,
+   "mu_best_orientation": 1884116.800077363,
+   "observed_vs_shaft_cosine2": 0.8357855364238779
+  },
+  {
+   "subject": "sub-03",
+   "run": "04",
+   "current_a": 0.0003,
+   "mu_obs": 17926.363565751333,
+   "mu_shaft": 138927.00958649645,
+   "mu_orientation_average": 126776.4207626109,
+   "mu_best_orientation": 180082.93015721752,
+   "observed_vs_shaft_cosine2": 0.8864442980884725
+  },
+  {
+   "subject": "sub-03",
+   "run": "05",
+   "current_a": 0.0005,
+   "mu_obs": 116172.47161671301,
+   "mu_shaft": 19147937.504970424,
+   "mu_orientation_average": 18868559.819346506,
+   "mu_best_orientation": 52520555.30939376,
+   "observed_vs_shaft_cosine2": 0.9000838022985596
+  },
+  {
+   "subject": "sub-03",
+   "run": "06",
+   "current_a": 0.0003,
+   "mu_obs": 472527.6957218643,
+   "mu_shaft": 10462448.840388158,
+   "mu_orientation_average": 10940983.035042247,
+   "mu_best_orientation": 30976135.051643427,
+   "observed_vs_shaft_cosine2": 0.3533502432777347
+  },
+  {
+   "subject": "sub-03",
+   "run": "07",
+   "current_a": 0.0005,
+   "mu_obs": 1195074.8039018293,
+   "mu_shaft": 707938.8602170333,
+   "mu_orientation_average": 782797.1125124102,
+   "mu_best_orientation": 1099466.3540196114,
+   "observed_vs_shaft_cosine2": 0.3412902876796208
+  },
+  {
+   "subject": "sub-04",
+   "run": "01",
+   "current_a": 0.0001,
+   "mu_obs": 4819.368371108059,
+   "mu_shaft": 162809.24136210105,
+   "mu_orientation_average": 175546.6671031481,
+   "mu_best_orientation": 245828.59581173328,
+   "observed_vs_shaft_cosine2": 0.6012953587642406
+  },
+  {
+   "subject": "sub-04",
+   "run": "02",
+   "current_a": 0.0003,
+   "mu_obs": 24989.813670437154,
+   "mu_shaft": 1162473.790968573,
+   "mu_orientation_average": 1223049.7987178115,
+   "mu_best_orientation": 1766587.0003236744,
+   "observed_vs_shaft_cosine2": 0.5566524981132667
+  },
+  {
+   "subject": "sub-04",
+   "run": "03",
+   "current_a": 0.0001,
+   "mu_obs": 38378.67976777453,
+   "mu_shaft": 105019.31538270846,
+   "mu_orientation_average": 138658.86359046763,
+   "mu_best_orientation": 201358.02267535718,
+   "observed_vs_shaft_cosine2": 0.6430594442739653
+  },
+  {
+   "subject": "sub-04",
+   "run": "04",
+   "current_a": 0.0003,
+   "mu_obs": 299738.1573429524,
+   "mu_shaft": 1187559.3295304875,
+   "mu_orientation_average": 1474081.4024871476,
+   "mu_best_orientation": 1998265.4531644355,
+   "observed_vs_shaft_cosine2": 0.6415714387419091
+  },
+  {
+   "subject": "sub-04",
+   "run": "05",
+   "current_a": 0.0001,
+   "mu_obs": 1929.7325566727854,
+   "mu_shaft": 177497.72959318123,
+   "mu_orientation_average": 150960.45960261647,
+   "mu_best_orientation": 190926.3671823938,
+   "observed_vs_shaft_cosine2": 0.6887783077809708
+  },
+  {
+   "subject": "sub-04",
+   "run": "06",
+   "current_a": 0.0001,
+   "mu_obs": 11379.629133192422,
+   "mu_shaft": 110474.08124667397,
+   "mu_orientation_average": 92822.63944137753,
+   "mu_best_orientation": 131242.0924108038,
+   "observed_vs_shaft_cosine2": 0.831734500387216
+  },
+  {
+   "subject": "sub-04",
+   "run": "07",
+   "current_a": 0.0001,
+   "mu_obs": 67815.44305362299,
+   "mu_shaft": 189152.34073711323,
+   "mu_orientation_average": 151798.78359021555,
+   "mu_best_orientation": 212870.60103068533,
+   "observed_vs_shaft_cosine2": 0.04813972060190678
+  },
+  {
+   "subject": "sub-04",
+   "run": "08",
+   "current_a": 0.0001,
+   "mu_obs": 11667.402120819845,
+   "mu_shaft": 54430.24636831359,
+   "mu_orientation_average": 45384.42837339965,
+   "mu_best_orientation": 58302.73100866094,
+   "observed_vs_shaft_cosine2": 0.9157654404845154
+  },
+  {
+   "subject": "sub-04",
+   "run": "09",
+   "current_a": 0.0001,
+   "mu_obs": 4959385.292391779,
+   "mu_shaft": 152826.39404835657,
+   "mu_orientation_average": 114560.60906289988,
+   "mu_best_orientation": 185125.7246475507,
+   "observed_vs_shaft_cosine2": 0.7398309556355208
+  },
+  {
+   "subject": "sub-05",
+   "run": "01",
+   "current_a": 0.0001,
+   "mu_obs": 187534.92461910474,
+   "mu_shaft": 121639.70053084035,
+   "mu_orientation_average": 169996.21565729982,
+   "mu_best_orientation": 247426.17462311592,
+   "observed_vs_shaft_cosine2": 0.8827708356699064
+  },
+  {
+   "subject": "sub-05",
+   "run": "02",
+   "current_a": 0.0003,
+   "mu_obs": 1395871.0556211881,
+   "mu_shaft": 1005864.8039782244,
+   "mu_orientation_average": 1240269.582211962,
+   "mu_best_orientation": 1953402.8265350226,
+   "observed_vs_shaft_cosine2": 0.8882800222654151
+  },
+  {
+   "subject": "sub-05",
+   "run": "03",
+   "current_a": 0.0001,
+   "mu_obs": 5915.032423933186,
+   "mu_shaft": 82361.4145576504,
+   "mu_orientation_average": 71547.42082453165,
+   "mu_best_orientation": 98350.12622514507,
+   "observed_vs_shaft_cosine2": 0.8782159044947658
+  },
+  {
+   "subject": "sub-05",
+   "run": "04",
+   "current_a": 0.0003,
+   "mu_obs": 45022.90483969473,
+   "mu_shaft": 698719.144119779,
+   "mu_orientation_average": 489335.31903732795,
+   "mu_best_orientation": 727738.6838947536,
+   "observed_vs_shaft_cosine2": 0.896052163051866
+  },
+  {
+   "subject": "sub-05",
+   "run": "05",
+   "current_a": 0.0001,
+   "mu_obs": 32446.903289378624,
+   "mu_shaft": 66112.51034790165,
+   "mu_orientation_average": 54978.89756198166,
+   "mu_best_orientation": 78567.38156908021,
+   "observed_vs_shaft_cosine2": 0.8068343889043265
+  },
+  {
+   "subject": "sub-05",
+   "run": "06",
+   "current_a": 0.0001,
+   "mu_obs": 2609.1823013532394,
+   "mu_shaft": 12484.171799123542,
+   "mu_orientation_average": 60958.81061542832,
+   "mu_best_orientation": 106661.66415694603,
+   "observed_vs_shaft_cosine2": 0.9993086692942941
+  },
+  {
+   "subject": "sub-05",
+   "run": "07",
+   "current_a": 0.0003,
+   "mu_obs": 37259.434376266225,
+   "mu_shaft": 133592.48668129244,
+   "mu_orientation_average": 606051.3804408755,
+   "mu_best_orientation": 1100837.9609237972,
+   "observed_vs_shaft_cosine2": 0.9974495364140425
+  },
+  {
+   "subject": "sub-05",
+   "run": "08",
+   "current_a": 0.0001,
+   "mu_obs": 2446.533882327639,
+   "mu_shaft": 19483.293908396994,
+   "mu_orientation_average": 76799.74579190466,
+   "mu_best_orientation": 116465.08736034443,
+   "observed_vs_shaft_cosine2": 0.999918300225812
+  },
+  {
+   "subject": "sub-05",
+   "run": "09",
+   "current_a": 0.0003,
+   "mu_obs": 18388.3396349135,
+   "mu_shaft": 167072.2106484553,
+   "mu_orientation_average": 610336.6219797826,
+   "mu_best_orientation": 994608.1414556433,
+   "observed_vs_shaft_cosine2": 0.9948421897535125
+  },
+  {
+   "subject": "sub-05",
+   "run": "10",
+   "current_a": 0.0001,
+   "mu_obs": 27913.071027392223,
+   "mu_shaft": 105347.45241325191,
+   "mu_orientation_average": 132945.46829224454,
+   "mu_best_orientation": 171452.0654112933,
+   "observed_vs_shaft_cosine2": 0.9721681275884316
+  },
+  {
+   "subject": "sub-05",
+   "run": "11",
+   "current_a": 0.0003,
+   "mu_obs": 219424.07744760628,
+   "mu_shaft": 732932.9924261855,
+   "mu_orientation_average": 1105453.7279918548,
+   "mu_best_orientation": 1463630.1105731498,
+   "observed_vs_shaft_cosine2": 0.9743001330813631
+  },
+  {
+   "subject": "sub-05",
+   "run": "12",
+   "current_a": 0.0001,
+   "mu_obs": 7126.771821740269,
+   "mu_shaft": 53024.91421933612,
+   "mu_orientation_average": 47370.77208582815,
+   "mu_best_orientation": 56221.44654163117,
+   "observed_vs_shaft_cosine2": 0.8107482866040536
+  },
+  {
+   "subject": "sub-05",
+   "run": "13",
+   "current_a": 0.0003,
+   "mu_obs": 57157.87911175928,
+   "mu_shaft": 441900.8468744718,
+   "mu_orientation_average": 360285.93794209324,
+   "mu_best_orientation": 451516.5857892888,
+   "observed_vs_shaft_cosine2": 0.9218964514106964
+  },
+  {
+   "subject": "sub-05",
+   "run": "14",
+   "current_a": 0.0001,
+   "mu_obs": 66381.58991232511,
+   "mu_shaft": 94721.38572721955,
+   "mu_orientation_average": 93386.94943799458,
+   "mu_best_orientation": 118369.61437560435,
+   "observed_vs_shaft_cosine2": 0.9892123328955977
+  },
+  {
+   "subject": "sub-06",
+   "run": "01",
+   "current_a": 0.0001,
+   "mu_obs": 4283.171579172891,
+   "mu_shaft": 43737.6851631439,
+   "mu_orientation_average": 34908.79746491102,
+   "mu_best_orientation": 48486.80061784741,
+   "observed_vs_shaft_cosine2": 0.9302822752018844
+  },
+  {
+   "subject": "sub-06",
+   "run": "02",
+   "current_a": 0.0003,
+   "mu_obs": 43390.42703658903,
+   "mu_shaft": 403560.264556838,
+   "mu_orientation_average": 341574.1332294631,
+   "mu_best_orientation": 466709.411650248,
+   "observed_vs_shaft_cosine2": 0.9537606981595238
+  },
+  {
+   "subject": "sub-06",
+   "run": "03",
+   "current_a": 0.0001,
+   "mu_obs": 445825.0766489305,
+   "mu_shaft": 198249.376654783,
+   "mu_orientation_average": 155396.00757976863,
+   "mu_best_orientation": 212398.90095189732,
+   "observed_vs_shaft_cosine2": 0.7533949155063334
+  },
+  {
+   "subject": "sub-06",
+   "run": "04",
+   "current_a": 0.0003,
+   "mu_obs": 2417501.6112565217,
+   "mu_shaft": 706048.9975674406,
+   "mu_orientation_average": 570409.8423029067,
+   "mu_best_orientation": 765626.9839084672,
+   "observed_vs_shaft_cosine2": 0.7614605142564003
+  },
+  {
+   "subject": "sub-06",
+   "run": "05",
+   "current_a": 0.0001,
+   "mu_obs": 2874.7589477766246,
+   "mu_shaft": 26148.959143728818,
+   "mu_orientation_average": 25660.467062569485,
+   "mu_best_orientation": 40023.118424845736,
+   "observed_vs_shaft_cosine2": 0.9604011682236262
+  },
+  {
+   "subject": "sub-06",
+   "run": "06",
+   "current_a": 0.0001,
+   "mu_obs": 425562.58286945435,
+   "mu_shaft": 171733.44505583265,
+   "mu_orientation_average": 145846.56564653214,
+   "mu_best_orientation": 229987.48293268398,
+   "observed_vs_shaft_cosine2": 0.9082041581752149
+  },
+  {
+   "subject": "sub-06",
+   "run": "07",
+   "current_a": 0.0003,
+   "mu_obs": 2179061.494169545,
+   "mu_shaft": 1064201.109117537,
+   "mu_orientation_average": 764263.6889961729,
+   "mu_best_orientation": 1243179.8907158254,
+   "observed_vs_shaft_cosine2": 0.9203532482524577
+  },
+  {
+   "subject": "sub-07",
+   "run": "01",
+   "current_a": 0.0001,
+   "mu_obs": 67806.3792269766,
+   "mu_shaft": 114671.76691814252,
+   "mu_orientation_average": 88599.20159180385,
+   "mu_best_orientation": 129054.46311394458,
+   "observed_vs_shaft_cosine2": 0.8119788078690053
+  },
+  {
+   "subject": "sub-07",
+   "run": "02",
+   "current_a": 0.0003,
+   "mu_obs": 431561.3065718935,
+   "mu_shaft": 871356.6169581024,
+   "mu_orientation_average": 650311.0830944607,
+   "mu_best_orientation": 935207.9519823724,
+   "observed_vs_shaft_cosine2": 0.8530052450699587
+  },
+  {
+   "subject": "sub-07",
+   "run": "03",
+   "current_a": 0.0001,
+   "mu_obs": 197609.91622521446,
+   "mu_shaft": 689136.7238825994,
+   "mu_orientation_average": 400335.55450618017,
+   "mu_best_orientation": 711447.375018121,
+   "observed_vs_shaft_cosine2": 0.9728295806811804
+  },
+  {
+   "subject": "sub-07",
+   "run": "04",
+   "current_a": 0.0003,
+   "mu_obs": 1742603.023330946,
+   "mu_shaft": 5215283.851108209,
+   "mu_orientation_average": 3095220.1328642424,
+   "mu_best_orientation": 5343110.705136383,
+   "observed_vs_shaft_cosine2": 0.9364370076877075
+  },
+  {
+   "subject": "sub-07",
+   "run": "05",
+   "current_a": 0.0003,
+   "mu_obs": 11012.327530626102,
+   "mu_shaft": 494577.475387611,
+   "mu_orientation_average": 340796.6756495648,
+   "mu_best_orientation": 504802.03175413987,
+   "observed_vs_shaft_cosine2": 0.9350761186016573
+  },
+  {
+   "subject": "sub-07",
+   "run": "06",
+   "current_a": 0.0001,
+   "mu_obs": 82561.5033638878,
+   "mu_shaft": 368905.93580715504,
+   "mu_orientation_average": 272203.6408221495,
+   "mu_best_orientation": 492919.34567987634,
+   "observed_vs_shaft_cosine2": 0.529268225550538
+  },
+  {
+   "subject": "sub-07",
+   "run": "07",
+   "current_a": 0.0003,
+   "mu_obs": 2393751.285608452,
+   "mu_shaft": 6688774.9877890665,
+   "mu_orientation_average": 4440476.332016434,
+   "mu_best_orientation": 8202933.387545162,
+   "observed_vs_shaft_cosine2": 0.4951379199811776
+  }
+ ]
+}

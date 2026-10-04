@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neural-observability"
+version = "1.0.0"
+description = "State estimation and identifiability in linearised neural mass models from scalp EEG"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "sympy",
+    "mpmath",
+    "mne",
+    "matplotlib",
+    "nibabel",
+    "h5py",
+    "torch",
+]
+
+[tool.setuptools.packages.find]
+include = ["neural_observability*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

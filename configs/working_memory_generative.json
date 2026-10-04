@@ -1,0 +1,52 @@
+{
+  "seed": 20260820,
+  "data_config": "configs/working_memory_data.json",
+  "preprocessing": {
+    "target_sampling_frequency_hz": 200.0,
+    "bandpass_hz": [
+      0.5,
+      40.0
+    ],
+    "filter": "polyphase_resample_then_strictly_causal_sos_butterworth_order_4_within_each_8s_trial",
+    "eeg_reference": "orthonormal_average_reference_coordinates",
+    "ieeg_reference": "adjacent_contact_bipolar_lower_minus_higher",
+    "encoding_reference_window_seconds": [
+      0.25,
+      1.75
+    ],
+    "maintenance_response_window_seconds": [
+      2.25,
+      4.75
+    ]
+  },
+  "candidate": {
+    "latent_dynamics": "encoding_only_stable_affine_var_order_1_current_dipole_state",
+    "intracranial_observation": "infinite_homogeneous_conductor_unit_dipoles_bipolar_lower_minus_higher",
+    "intracranial_operator_softening_mm": 1.0,
+    "intracranial_operator_row_normalization": true,
+    "latent_inverse_ridge": 0.1,
+    "transition_ridge": 0.1,
+    "maximum_discrete_spectral_radius": 0.98,
+    "process_covariance_diagonal_loading": 0.05,
+    "intracranial_noise_covariance_diagonal_loading": 0.05,
+    "scalp_observation": "fsaverage_bem_in_orthonormal_average_reference_coordinates",
+    "source_to_scalp_diagonal_gain_ridge": 0.1,
+    "unobserved_source_and_sensor_covariance_diagonal_loading": 0.1,
+    "score": "held_out_gaussian_log_likelihood_gain_per_scalp_dimension_and_sample_over_nuisance_only_model"
+  },
+  "controls": {
+    "geometry_column_permutations_per_session": 200,
+    "circular_time_permutations_per_session": 200,
+    "trial_identity_permutations_per_session": 200,
+    "minimum_circular_time_shift_seconds": 1.0,
+    "fixed_circular_time_shift_seconds": 1.0,
+    "intracranial_operator_control": "identity_ieeg_equals_dipole_state_with_all_encoding_calibration_refit",
+    "nuisance_covariance_diagnostic": "encoding_residual_full_covariance_vs_its_diagonal"
+  },
+  "inference": {
+    "subject_test": "exact_one_sided_subject_sign_flip",
+    "subject_bootstrap_resamples": 50000,
+    "equal_subject_weighting": true
+  },
+  "output_dir": "results/working_memory/generative_model"
+}

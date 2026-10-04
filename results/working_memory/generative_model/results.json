@@ -1,0 +1,85 @@
+{
+  "clean_trial_count": 3185,
+  "control_summaries": {
+    "fixed_one_second": {
+      "extreme_sign_patterns": 1,
+      "median_subject_effect": 0.0045101894295177004,
+      "observed_mean": 0.010082588632927379,
+      "one_sided_exact_p": 3.0517578125e-05,
+      "positive_subject_fraction": 1.0,
+      "subject_bootstrap_mean_95_ci_descriptive": [
+        0.0057246413286722725,
+        0.014885669479258797
+      ],
+      "subject_count": 15,
+      "total_sign_patterns": 32768
+    },
+    "geometry": {
+      "extreme_sign_patterns": 2,
+      "median_subject_effect": 0.001879919276269795,
+      "observed_mean": 0.0029398059894476694,
+      "one_sided_exact_p": 6.103515625e-05,
+      "positive_subject_fraction": 0.9333333333333333,
+      "subject_bootstrap_mean_95_ci_descriptive": [
+        0.0016469504362530986,
+        0.004462671306683434
+      ],
+      "subject_count": 15,
+      "total_sign_patterns": 32768
+    },
+    "intracranial_operator": {
+      "extreme_sign_patterns": 2865,
+      "median_subject_effect": 0.00011750925150588398,
+      "observed_mean": 0.0004911483169127176,
+      "one_sided_exact_p": 0.087432861328125,
+      "positive_subject_fraction": 0.6,
+      "subject_bootstrap_mean_95_ci_descriptive": [
+        -6.853537126900058e-05,
+        0.0011540975072116117
+      ],
+      "subject_count": 15,
+      "total_sign_patterns": 32768
+    },
+    "predictive_value": {
+      "extreme_sign_patterns": 9496,
+      "median_subject_effect": -0.0009088969500200271,
+      "observed_mean": 0.000630518221818354,
+      "one_sided_exact_p": 0.289794921875,
+      "positive_subject_fraction": 0.4666666666666667,
+      "subject_bootstrap_mean_95_ci_descriptive": [
+        -0.000979581962064576,
+        0.0026779820177355905
+      ],
+      "subject_count": 15,
+      "total_sign_patterns": 32768
+    },
+    "time": {
+      "extreme_sign_patterns": 1,
+      "median_subject_effect": 0.004723785612580007,
+      "observed_mean": 0.010395372675898316,
+      "one_sided_exact_p": 3.0517578125e-05,
+      "positive_subject_fraction": 1.0,
+      "subject_bootstrap_mean_95_ci_descriptive": [
+        0.005863529587051505,
+        0.015501078034364586
+      ],
+      "subject_count": 15,
+      "total_sign_patterns": 32768
+    },
+    "trial_identity": {
+      "extreme_sign_patterns": 1,
+      "median_subject_effect": 0.004544238019280073,
+      "observed_mean": 0.00988609490466259,
+      "one_sided_exact_p": 3.0517578125e-05,
+      "positive_subject_fraction": 1.0,
+      "subject_bootstrap_mean_95_ci_descriptive": [
+        0.0056525281532222235,
+        0.01457478568419149
+      ],
+      "subject_count": 15,
+      "total_sign_patterns": 32768
+    }
+  },
+  "session_count": 68,
+  "subject_count": 15
+}

@@ -1,0 +1,282 @@
+{
+  "conductivity_sensitivity_comparisons": [
+    {
+      "relative_frobenius_change_from_nominal": 0.36906679103649714,
+      "skull_conductivity_s_per_m": 0.0021,
+      "source_column_norm_ratio_to_nominal": {
+        "maximum": 0.7078458565919223,
+        "median": 0.6355822272132586,
+        "minimum": 0.6042481292333006,
+        "p05": 0.6121410579809325,
+        "p95": 0.675961995587845
+      },
+      "source_count": 216,
+      "squared_topographic_cosine": {
+        "mean": 0.9908997731467878,
+        "median": 0.9924476269902209,
+        "minimum": 0.977665954831783,
+        "p05": 0.9812687943693
+      },
+      "subject": "sub-06"
+    },
+    {
+      "relative_frobenius_change_from_nominal": 0.45201236960994545,
+      "skull_conductivity_s_per_m": 0.0084,
+      "source_column_norm_ratio_to_nominal": {
+        "maximum": 1.5411041844207203,
+        "median": 1.4415009498226024,
+        "minimum": 1.2996189279213068,
+        "p05": 1.354521099148716,
+        "p95": 1.5178203658692178
+      },
+      "source_count": 216,
+      "squared_topographic_cosine": {
+        "mean": 0.9903124148204704,
+        "median": 0.9902884221277926,
+        "minimum": 0.9813183177069577,
+        "p05": 0.9843383699329251
+      },
+      "subject": "sub-06"
+    },
+    {
+      "relative_frobenius_change_from_nominal": 0.36672773119953506,
+      "skull_conductivity_s_per_m": 0.0021,
+      "source_column_norm_ratio_to_nominal": {
+        "maximum": 0.7117491767901158,
+        "median": 0.6448569797509742,
+        "minimum": 0.6074764959013801,
+        "p05": 0.6153821255636672,
+        "p95": 0.6787149042605178
+      },
+      "source_count": 198,
+      "squared_topographic_cosine": {
+        "mean": 0.9901423953096382,
+        "median": 0.9918794996660136,
+        "minimum": 0.97272285845787,
+        "p05": 0.9782127915145888
+      },
+      "subject": "sub-05"
+    },
+    {
+      "relative_frobenius_change_from_nominal": 0.43222906234697245,
+      "skull_conductivity_s_per_m": 0.0084,
+      "source_column_norm_ratio_to_nominal": {
+        "maximum": 1.5342661840348035,
+        "median": 1.4014785027520107,
+        "minimum": 1.271124000686938,
+        "p05": 1.325870719861094,
+        "p95": 1.4961779851708268
+      },
+      "source_count": 198,
+      "squared_topographic_cosine": {
+        "mean": 0.9903999957912136,
+        "median": 0.990780026752928,
+        "minimum": 0.9783386901822517,
+        "p05": 0.9826440430889458
+      },
+      "subject": "sub-05"
+    },
+    {
+      "relative_frobenius_change_from_nominal": 0.361732873185105,
+      "skull_conductivity_s_per_m": 0.0021,
+      "source_column_norm_ratio_to_nominal": {
+        "maximum": 0.9102827117609735,
+        "median": 0.6478743331994163,
+        "minimum": 0.5997991035420431,
+        "p05": 0.6144262441722803,
+        "p95": 0.7094877722128071
+      },
+      "source_count": 192,
+      "squared_topographic_cosine": {
+        "mean": 0.9813363037762247,
+        "median": 0.9889341329159625,
+        "minimum": 0.8192714305458995,
+        "p05": 0.9510235873087202
+      },
+      "subject": "sub-25"
+    },
+    {
+      "relative_frobenius_change_from_nominal": 0.4400434713609452,
+      "skull_conductivity_s_per_m": 0.0084,
+      "source_column_norm_ratio_to_nominal": {
+        "maximum": 1.5567207707007422,
+        "median": 1.4185021730543457,
+        "minimum": 1.0992319546896705,
+        "p05": 1.3336068674672716,
+        "p95": 1.5130335611932402
+      },
+      "source_count": 192,
+      "squared_topographic_cosine": {
+        "mean": 0.9863936310975499,
+        "median": 0.9890740138874541,
+        "minimum": 0.9136717264360632,
+        "p05": 0.9677485109914079
+      },
+      "subject": "sub-25"
+    },
+    {
+      "relative_frobenius_change_from_nominal": 0.38560572245055375,
+      "skull_conductivity_s_per_m": 0.0021,
+      "source_column_norm_ratio_to_nominal": {
+        "maximum": 0.719909925727728,
+        "median": 0.6223295239255676,
+        "minimum": 0.5851671847018938,
+        "p05": 0.6003573658153722,
+        "p95": 0.6740967945126433
+      },
+      "source_count": 247,
+      "squared_topographic_cosine": {
+        "mean": 0.9862550404051054,
+        "median": 0.9932799453767018,
+        "minimum": 0.7835475533646308,
+        "p05": 0.9663756998078162
+      },
+      "subject": "sub-33"
+    },
+    {
+      "relative_frobenius_change_from_nominal": 0.48502891976732254,
+      "skull_conductivity_s_per_m": 0.0084,
+      "source_column_norm_ratio_to_nominal": {
+        "maximum": 1.5879773627230018,
+        "median": 1.4639133907756827,
+        "minimum": 1.287530108516036,
+        "p05": 1.3713248952443395,
+        "p95": 1.5444242461962956
+      },
+      "source_count": 247,
+      "squared_topographic_cosine": {
+        "mean": 0.9884631356567317,
+        "median": 0.9914388385195914,
+        "minimum": 0.8883698317562682,
+        "p05": 0.975895786444076
+      },
+      "subject": "sub-33"
+    },
+    {
+      "relative_frobenius_change_from_nominal": 0.3585553810033637,
+      "skull_conductivity_s_per_m": 0.0021,
+      "source_column_norm_ratio_to_nominal": {
+        "maximum": 0.7289003382183208,
+        "median": 0.6512823183322174,
+        "minimum": 0.6068501382051638,
+        "p05": 0.6170718910937074,
+        "p95": 0.7024676373407617
+      },
+      "source_count": 167,
+      "squared_topographic_cosine": {
+        "mean": 0.9885093986502472,
+        "median": 0.9887915873321188,
+        "minimum": 0.9741401266342957,
+        "p05": 0.9788061671831654
+      },
+      "subject": "sub-29"
+    },
+    {
+      "relative_frobenius_change_from_nominal": 0.4283422824676588,
+      "skull_conductivity_s_per_m": 0.0084,
+      "source_column_norm_ratio_to_nominal": {
+        "maximum": 1.553997152051713,
+        "median": 1.4039050466441683,
+        "minimum": 1.2581702043118859,
+        "p05": 1.3096142330263825,
+        "p95": 1.5037831267885522
+      },
+      "source_count": 167,
+      "squared_topographic_cosine": {
+        "mean": 0.9888491810568513,
+        "median": 0.9885556864242856,
+        "minimum": 0.9783231956815812,
+        "p05": 0.9824311063877315
+      },
+      "subject": "sub-29"
+    },
+    {
+      "relative_frobenius_change_from_nominal": 0.3810201393277251,
+      "skull_conductivity_s_per_m": 0.0021,
+      "source_column_norm_ratio_to_nominal": {
+        "maximum": 0.66941072083527,
+        "median": 0.6234950451021475,
+        "minimum": 0.5915346421521817,
+        "p05": 0.6008596110540565,
+        "p95": 0.6491853409072582
+      },
+      "source_count": 168,
+      "squared_topographic_cosine": {
+        "mean": 0.9952491938610416,
+        "median": 0.9956460566079105,
+        "minimum": 0.9878701113098651,
+        "p05": 0.9906288263023819
+      },
+      "subject": "sub-19"
+    },
+    {
+      "relative_frobenius_change_from_nominal": 0.48314080912923807,
+      "skull_conductivity_s_per_m": 0.0084,
+      "source_column_norm_ratio_to_nominal": {
+        "maximum": 1.5766027942050487,
+        "median": 1.467714932336762,
+        "minimum": 1.3856846673023089,
+        "p05": 1.4165114515221295,
+        "p95": 1.536956880146217
+      },
+      "source_count": 168,
+      "squared_topographic_cosine": {
+        "mean": 0.9938031167112336,
+        "median": 0.9940857855529732,
+        "minimum": 0.9882871892476329,
+        "p05": 0.9896664736955357
+      },
+      "subject": "sub-19"
+    },
+    {
+      "relative_frobenius_change_from_nominal": 0.3617257585193613,
+      "skull_conductivity_s_per_m": 0.0021,
+      "source_column_norm_ratio_to_nominal": {
+        "maximum": 0.8419362479881938,
+        "median": 0.6477731622175908,
+        "minimum": 0.599676177161267,
+        "p05": 0.609963563038847,
+        "p95": 0.7310700213450823
+      },
+      "source_count": 215,
+      "squared_topographic_cosine": {
+        "mean": 0.9835158148027234,
+        "median": 0.9893112604657932,
+        "minimum": 0.8800123532416613,
+        "p05": 0.9461062179734493
+      },
+      "subject": "sub-08"
+    },
+    {
+      "relative_frobenius_change_from_nominal": 0.43350621681794815,
+      "skull_conductivity_s_per_m": 0.0084,
+      "source_column_norm_ratio_to_nominal": {
+        "maximum": 1.5558880809892868,
+        "median": 1.406248060113189,
+        "minimum": 1.108601313317402,
+        "p05": 1.2914325217570444,
+        "p95": 1.5127856156327968
+      },
+      "source_count": 215,
+      "squared_topographic_cosine": {
+        "mean": 0.9863043044552522,
+        "median": 0.9889977839791185,
+        "minimum": 0.9191759560973268,
+        "p05": 0.9671249716599188
+      },
+      "subject": "sub-08"
+    }
+  ],
+  "conductivity_sensitivity_subjects": [
+    "sub-06",
+    "sub-05",
+    "sub-25",
+    "sub-33",
+    "sub-29",
+    "sub-19",
+    "sub-08"
+  ],
+  "maximum_unpreconditioned_relative_residual": 3.4955809712756217e-10,
+  "nominal_subject_count": 32,
+  "validated_task_count": 46
+}

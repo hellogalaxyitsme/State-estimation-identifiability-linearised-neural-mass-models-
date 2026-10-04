@@ -1,0 +1,20 @@
+{
+  "automated_fail_count": 3,
+  "automated_pass_count": 32,
+  "failed_subjects": [
+    "sub-02",
+    "sub-20",
+    "sub-32"
+  ],
+  "failure_count_by_check": {
+    "electrode_centroid_displacement_pass": 1,
+    "electrode_projected_separation_pass": 2,
+    "electrode_projection_maximum_distance_pass": 1,
+    "electrode_projection_median_distance_pass": 1,
+    "electrode_projection_p95_distance_pass": 1,
+    "electrode_radial_scale_pass": 1,
+    "fiducial_to_scalp_distance_pass": 1
+  },
+  "metric_table": "headmodel_qc_summary.csv",
+  "subject_count": 35
+}

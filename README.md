@@ -68,6 +68,7 @@ empirical analyses; the finite-element tests need Linux.
 | Fitting simulated recordings and limiting filter error | §4.5; figure 5e; ESM S10 | `simulations/run_finite_record_fits.py`, `simulations/run_finite_record_filter.py` | `results/simulations/finite_record_fits/` |
 | Nonlinear filtering (particle and extended Kalman filters) | §4.4; figure 4; ESM S9 | `simulations/run_nonlinear_filtering.py`, `simulations/summarize_nonlinear_filtering.py` | `results/simulations/nonlinear_filtering/` |
 | Template-head network and montage ceilings | §4.6; figure 6 | `simulations/run_network.py` | `results/simulations/network/` |
+| Acquisition upgrades versus parameter uncertainty on the template-head network | supplementary S11, table S15 | `simulations/run_design_tradeoff.py` | `results/simulations/design_tradeoff/` |
 | Known intracerebral current sources (Localize-MI) | §4.7; figure 7; ESM S8 | `known_sources/run_localize_mi.py`, `known_sources/run_localize_mi_sensitivity.py`, `known_sources/run_localize_mi_orientation.py` | `results/known_sources/` |
 | Stimulation cohort, spherical head models | §4.8; figure 8a; ESM S6 | `stimulation/run_spherical_models.py` | `results/stimulation/spherical/` |
 | Stimulation cohort, individual finite-element head models and projected trajectories | §4.8; figure 8a; ESM S6 | `stimulation/run_segmentation.py`, `stimulation/run_head_model.py`, `stimulation/run_lead_fields.py`, `stimulation/run_fem_analysis.py` | `results/stimulation/fem/` |
@@ -89,6 +90,9 @@ Script paths are relative to `scripts/`.
 * `results/simulations/nonlinear_filtering/`: every filtering setting
   (`pf_results.json`), convergence runs and summaries.
 * `results/simulations/network/network_results.json`.
+* `results/simulations/design_tradeoff/design_tradeoff_results.json`: sensor,
+  pyramidal-output and hidden-state errors for every montage, SNR, spatial prior
+  and parameter-uncertainty level, with the network verification checks.
 * `results/known_sources/localize_mi/localize_mi_results.json`: session-level
   values and endpoints for three skull conductivities;
   `results/known_sources/sensitivity/localize_mi_sensitivity.json`: every
@@ -131,6 +135,7 @@ python scripts/simulations/run_nonlinear_filtering.py --mode convergence --secon
     --regimes jansen_rit_focus,wendling_2002,next_generation_gamma
 python scripts/simulations/summarize_nonlinear_filtering.py
 python scripts/simulations/run_network.py --subjects-dir data/subjects
+python scripts/simulations/run_design_tradeoff.py --subjects-dir data/subjects
 ```
 
 Known current sources:
